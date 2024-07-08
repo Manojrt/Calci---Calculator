@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calci | Add, Subtract, Multiply and Division</title>
+
+    <link rel="shortcut icon" href="../Assets/icons8-calculator-48.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <bod>
+    <div class="h-[100vh] w-screen flex items-center justify-center duration-200">
+      <div
+        class="h-[650px] lg:h-[650px] w-[300px] md:w-[400px] border-[6px] gap-[32px] border-black rounded-3xl flex justify-center flex-col items-center bg-[#313131] shadow-2xl ">
+        <!-- Display -->
+        <input class="h-[200px] w-[268px] md:w-[368px] bg-slate-50 rounded-xl p-4 mt-[-50px] text-[64px] text-end" id="display" placeholder="0" type="text" disabled></input>
+
+        <!-- Buttons -->
+        <div class="grid grid-cols-4 items-center h-[300px] w-[268px] md:w-[368px] text-2xl gap-2">
+          <button class="py-4 bg-[#525252] rounded-md hover:bg-[#1a1a1a]" onclick="deleteLeft()"><i class="fa-solid fa-delete-left text-[#FFA500]"></i></button>
+          <button class="py-4 bg-[#525252] text-[#FFA500] rounded-md hover:bg-[#1a1a1a]" onclick="ClearValue()">CE</button>
+          <button class="py-4 bg-[#525252] text-slate-50 rounded-md hover:bg-[#1a1a1a]" onclick="displayNum('%')">%</button>
+          <button class="py-4 bg-[#525252] text-slate-50 rounded-md hover:bg-[#1a1a1a]" onclick="displayNum('/')">/</button>
+          <button class="py-4 bg-[#525252] text-slate-50 rounded-md hover:bg-[#1a1a1a]" onclick="displayNum('7')">7</button>
+          <button class="py-4 bg-[#525252] text-slate-50 rounded-md hover:bg-[#1a1a1a]" onclick="displayNum('8')">8</button>
+          <button class="py-4 bg-[#525252] text-slate-50 rounded-md hover:bg-[#1a1a1a]" onclick="displayNum('9')">9</button>
+          <button class="py-4 bg-[#525252] text-slate-50 rounded-md hover:bg-[#1a1a1a]" onclick="displayNum('*')">X</button>
+          <button class="py-4 bg-[#525252] text-slate-50 rounded-md hover:bg-[#1a1a1a]" onclick="displayNum('4')">4</button>
+          <button class="py-4 bg-[#525252] text-slate-50 rounded-md hover:bg-[#1a1a1a]" onclick="displayNum('5')">5</button>
+          <button class="py-4 bg-[#525252] text-slate-50 rounded-md hover:bg-[#1a1a1a]" onclick="displayNum('6')">6</button>
+          <button class="py-4 bg-[#525252] text-slate-50 rounded-md hover:bg-[#1a1a1a]" onclick="displayNum('-')">-</button>
+          <button class="py-4 bg-[#525252] text-slate-50 rounded-md hover:bg-[#1a1a1a]" onclick="displayNum('1')">1</button>
+          <button class="py-4 bg-[#525252] text-slate-50 rounded-md hover:bg-[#1a1a1a]" onclick="displayNum('2')">2</button>
+          <button class="py-4 bg-[#525252] text-slate-50 rounded-md hover:bg-[#1a1a1a]" onclick="displayNum('3')">3</button>
+          <button class="py-4 bg-[#525252] text-slate-50 rounded-md hover:bg-[#1a1a1a]" onclick="displayNum('+')">+</button>
+          <button class="py-4 bg-[#525252] text-slate-50 rounded-md hover:bg-[#1a1a1a]" onclick="displayNum('0')">0</button>
+          <button class="py-4 bg-[#525252] text-slate-50 rounded-md hover:bg-[#1a1a1a]" onclick="displayNum('.')">.</button>
+          <button class="py-4 w-[132px] md:w-[180px] bg-[#FFA500]  text-slate-50 rounded-md hover:bg-[#FFB328]" onclick="Calculate()">=</button>
+        </div>
+      </div>
+
+  </div>
+
+    <script src="./main.js"></script>
+    <script src="https://kit.fontawesome.com/dc1f9ab20d.js" crossorigin="anonymous"></script>
+  </bod>
+</html>
